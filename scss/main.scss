@@ -1,0 +1,42 @@
+#contenedor {
+    @extend %flex;
+    @extend %Font;
+    height: 150px;
+    border: solid 1px #aaa;
+    background-color: $colorPrimario;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+    h1 {
+      margin: 0;
+      padding: 25px;
+      font-family: "Luckiest Guy", cursive;
+      font-size: 50px;
+      color: $colorTerciario;
+      float: left;
+    }
+    ul {
+      @extend %flex;
+      list-style: none;
+    }
+    .menu {
+      padding: 50px;
+      li {
+        margin: 5px;
+        a {
+          font-family: "Sigmar One", cursive;
+          font-size: 15px;
+          text-decoration: none;
+          float: left;
+          padding: 10px 15px;
+          border: 1px solid white;
+          color: $colorTerciario;
+        }
+        a:hover {
+          background-color: #ffffff;
+          margin-top: -2;
+        }
+      }
+    }
+  }
+  

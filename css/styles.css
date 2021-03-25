@@ -1,0 +1,963 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/*font-family: 'Handlee', cursive;*/
+
+:root {
+  --pink1: #ee0d90;
+  --pink2: #e91ba7de;
+  --gray: #ffffff80;
+  --gray2: #f7d9d990;
+  --yellow1: #f3e9c7;
+  --yellow2: #f1eac7;
+  --shadow: 0 8px 8px;
+  --color_shadow: #5a044033;
+}
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:100px 0;
+    height: auto;
+}
+
+.container--modifier{
+    width: 60%;
+}
+
+
+
+
+/********************************************************MENU*********************************************************/
+
+
+.chu{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+}
+
+.nav__chu{
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+
+  .miled {
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    color: #ec3da3;
+  }
+
+.logo__name{
+    font-size: 24px;
+}
+
+a.link{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+}
+
+.link:hover {
+  color: #f1b6d9;
+}
+
+.link--active{
+    color: #f1b6d9;
+    font-weight: 700;
+}
+
+a:active { color: lime; }  
+
+.point {
+    color: var(--pink1);
+  }
+
+.chu__main{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+}
+
+.banner{
+    object-fit: cover;
+    width: 48%;
+    max-height: 90vh;
+}
+
+.chu__textos{
+    width: 48%;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    color: rgb(201, 36, 132);
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+}
+
+.title--active{
+    color: var(--pink1);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color: black;
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px 0;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #dd3296 0%, #e46bb2 100%);
+    text-decoration: none;
+    color: var(--yellow2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+}
+
+/********************************************************SERVICIOS*********************************************************/
+
+
+.services{
+  background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+  font-family: 'Handlee', cursive;
+}
+
+.subtitle{
+    font-size: 42px;
+    color: black;
+    font-family: 'Handlee', cursive;
+}
+
+.subtitle--modifier{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.copy__section {
+    color: rgb(201, 36, 132);
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+
+.copy__section--modifier{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+  width: 30%;
+  padding: 30px 0;
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  text-align: right;
+  margin-bottom: 60px;
+  box-shadow: 0 0 6px var(--color_shadow);
+  
+}
+
+.card__img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.cards__text{
+    text-align: left;
+    width: 90%;
+    margin:0 auto;
+}
+
+.card__list{
+    color: var(--pink2);
+    font-weight: 700;
+    margin: 25px 0 12px;
+    font-size: 18px;
+}
+
+
+.card__title{
+    font-size: 40px;
+  color: rgb(201, 36, 132);
+  margin-bottom: 8px;
+}
+
+.card__copy{
+    color: black;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.card__button{
+    display: block;
+  background: linear-gradient(180deg, #dd3296 0%, #e46bb2 100%);
+  border-radius: 6px;
+  text-decoration: none;
+  width: 100%;
+  color: var(--yellow1);
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.card__date{
+    color: var(--pink2);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.container-bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.background{
+    width: 68%;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.background__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.background__text{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.background__title{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+.projects{
+  font-family: 'Handlee', cursive;
+}
+
+
+/********************************************************CHECK*********************************************************/
+.container--modifier {
+  font-family: 'Handlee', cursive;
+ 
+}
+.subtitle--modifier {
+color: black;
+}
+
+.copy__section--modifier {
+  color: black;
+}
+
+.check{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.check__item{
+    width: 30%;
+    padding-right: 10px;
+    display: flex;
+    border-right: 2px solid var(--yellow2);
+}
+
+.bx-check{
+    background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    color: rgb(201, 36, 132);
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.check__number{
+    font-weight: 700;
+    color: black;
+}
+
+.check__copy{
+    font-weight: 300;
+    color: black;
+}
+
+.newsletter{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    position: relative;
+    border-radius: 6px;
+}
+
+.newsletter--modifier{
+    margin: 0;
+    width: 80%;
+}
+
+.newsletter__input{
+    width: 100%;
+  height: 100%;
+  padding: 22px 10px;
+  outline: none;
+  font-family: inherit;
+  border-radius: 6px;
+  border: 1px solid var(--yellow1);
+  font-family: 'Handlee', cursive;
+}
+
+.newsletter__submit{
+    position: absolute;
+  right: 8px;
+  top: 10%;
+  height: 80%;
+  background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+  color: rgb(201, 36, 132);
+  padding: 0 15px;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Handlee', cursive;
+  font-size: 15px;
+}
+
+
+
+/********************************************************FOOTER*********************************************************/
+
+.footer{
+    background: #fafafa;
+}
+
+.footer__caption{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+
+.title__footer{
+    font-size: 24px;
+    margin-bottom: 32px;
+    font-family: 'Handlee', cursive;
+}
+
+.footer__copy {
+    color: rgb(201, 36, 132);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Handlee', cursive;
+  }
+
+.copyright{
+    width: 100%;
+}
+
+.politica__privacidad{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.politica__privacidad:hover{
+    text-decoration: underline;
+}
+
+.politica__privacidad--margin{
+    margin-right: 10px;
+}
+
+.get-email{
+    width: 50%;
+}
+
+.socialmedia {
+    margin-top: 24px;
+    display: flex;
+    color: rgb(201, 36, 132);
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+  }
+
+  .socialmedia__icon {
+    font-size: 18px;
+    margin-right: 30px;
+    display: inline-block;
+  }
+  
+  .socialmedia__legend {
+    color: rgb(201, 36, 132);
+    margin-right: 16px;
+  }
+  
+  .contact {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: rgb(201, 36, 132);
+    font-family: 'Comfortaa', cursive;
+  }
+
+
+  .item__contact {
+    width: 25%;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+  }
+
+
+  .item__contact--gold {
+    background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+    color: var(--pink1);
+  }
+
+  .contact__icon {
+    font-size: 14px;
+    color: var(--pink1);
+    line-height: 20px;
+    margin-right: 4px;
+  }
+  
+  .contact__icon--modifier {
+    color: var(--pink1);
+  }
+  
+  .contact__title {
+    font-size: 16px;
+    line-height: 20px;
+    
+  }
+
+
+
+
+/********************************************************RESPONSIVE*********************************************************/
+@media screen and (max-width: 900px) {
+  .banner {
+    width: 600px;
+    height: auto;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .copy {
+    font-size: 22px;
+  }
+
+  .cta {
+    padding: 15px 22px;
+  }
+
+  .container-cards {
+    justify-content: space-evenly;
+  }
+
+  .services .card {
+    width: 45%;
+  }
+
+  .background {
+    width: 52%;
+  }
+
+  .card {
+    width: 42%;
+  }
+
+  .check__item {
+    width: 45%;
+    margin-bottom: 35px;
+  }
+
+  .newsletter {
+    width: 80%;
+  }
+
+  .get-email {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .socialmedia__icon {
+    font-size: 18px;
+  }
+
+  .socialmedia__legend {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .container,
+  footer .container {
+    padding: 60px 0;
+  }
+
+  .nav__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .nav__chu {
+    height: auto;
+  }
+
+  .logo {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .links {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .link {
+    padding: 7px 10px;
+  }
+
+  .chu__main {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    min-height: 70px;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .chu__textos {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .copy {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .copy__section {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .services .card {
+    width: 80%;
+  }
+
+  .container-bg {
+    justify-content: space-evenly;
+  }
+
+  .card {
+    margin-bottom: 40px;
+    width: 65%;
+  }
+
+  .card__title {
+    font-size: 35px;
+  }
+
+  .card__button {
+    width: 100%;
+  }
+
+  .background {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+
+  .background__copy {
+    display: none;
+  }
+
+  .container--modifier {
+    width: 80%;
+  }
+
+  .item__contact {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .rounded{
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .services .card {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .background {
+    width: 95%;
+  }
+
+  .container--modifier {
+    width: 90%;
+  }
+
+  .newsletter {
+    width: 100%;
+    display: none;
+  }
+
+  .newsletter--modifier {
+    display: block;
+  }
+
+  .check__item {
+    width: 100%;
+    border: none;
+    padding: none;
+    justify-content: center;
+  }
+
+  .rounded{
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+/********************************************************PRODUCTOS*********************************************************/
+
+/* ESTILOS DE SLIDER */
+
+.container {
+    color: #cf4c99;
+  }
+  
+  .btn-shop {
+    display: block;
+    border: 2px solid #ffffff;
+    color: #cf4c99;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px auto;
+    transition: all 0.5s;
+  }
+  
+  .imagen {
+    border: 5px solid #ffffff;
+  }
+  
+  .btn-shop:hover {
+    background: #f0cfc1;
+    color: white;
+  }
+  
+  /*BOOSTRAP*/
+  
+  .carousel-caption {
+    color: #1a1b1f;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  /* ESTILOS DE PRODUCTOS */
+  
+  .container__testimonials {
+    text-align: center;
+    background: linear-gradient(180deg, var(--yellow2) 0%, var(--yellow1) 100%);
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .section__title {
+    color: #cf4c99;
+    font-family: 'Luckiest Guy', cursive;
+  }
+  
+  .tip__txt {
+    color: #020202;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  .container-tips {
+    margin: 20px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #ecc6c6 0%, #f3c2c2 100%);
+  }
+  .tip i {
+    font-size: 2em;
+    color: #333;
+    padding: 20px 0;
+  }
+  
+  .tip__title {
+    color: #cf4c99;
+    font-family: 'Ranchers', cursive;
+  }
+  
+  .tip .btn-shop {
+    color: #333;
+  }
+  .btn-shop:hover {
+    color: white;
+  }
+  
+  /*Estilos para tablet*/
+  @media screen and (min-width: 768px) {
+    .container-tips {
+      margin: 50px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  /*Estilos para web*/
+  
+  @media screen and (min-width: 1024px) {
+    .container__testimonials {
+      font-size: 1.3em;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .slider {
+      height: 500px;
+      font-size: 1.5em;
+    }
+  }
+  
+  @media screen and (min-width: 1600px) {
+    .slider {
+      height: 600px;
+    }
+    .product__img {
+      height: 200px;
+    }
+  }
+  
+  
+  /********************************************************FORMULARIO*********************************************************/
+  
+  
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Handlee', cursive;
+  }
+  
+  .logo span {
+    color: #eba8af;
+  }
+  
+  .contact-wrapper > * {
+    padding: 1em;
+  }
+  
+  .contact-form {
+    background: #e7b1b1;
+    font-family: 'Handlee', cursive;
+    font-size: 18px;
+    color:#333
+  }
+  
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .contact-form form label {
+    display: block;
+  }
+  
+  .contact-form form p {
+    margin: 0;
+    padding: 1em;
+  }
+  
+  .contact-form form .block {
+    grid-column: 1 / 3;
+  }
+  
+  .contact-form form button,
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color:#474444;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  .contact-form form button {
+    background: #ce8e95;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+  }
+  
+  .contact-form form button:hover,
+  .contact-form form button:focus {
+    background: #eba8af;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+  }
+  
+  /* CONTACTO INFO */
+  .contact-info {
+    background: #f1bebe;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .content {
+    margin: 60px;
+  
+  }
+  
+  .contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+
+  /*  FORMULARIO RESPONSIVE */
+  @media(min-width: 700px) {
+    body {
+      
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+  }
+  
+  .carousel-font {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+  }
+  
+/*  NOVEDADES */
+
+  .accordion-button{
+    color: #cf4c99;
+      }

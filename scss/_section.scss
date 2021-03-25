@@ -1,0 +1,25 @@
+.fondo {
+    @extend %body;
+  }
+  
+  .accordion {
+    background-color: $colorCuaternario;
+  
+    .accordion-item {
+      .accordion-header {
+        background-color: $colorSecundario;
+        font-family: "Josefin Slab", serif;
+        color: black;
+        font-size: 30px;
+      }
+      .accordion-button {
+        background-color: $colorSecundario;
+        font-size: 20px;
+      }
+    }
+    .accordion-body {
+      @extend %Font;
+      font-size: 15px;
+    }
+  }
+  

@@ -1,0 +1,72 @@
+#contenedor ul, #contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion .accordion-body, #contenedor {
+  font-family: "Concert One", cursive;
+  font-size: 20px;
+}
+
+.fondo {
+  background-color: #f7efca;
+}
+
+#contenedor {
+  height: 150px;
+  border: solid 1px #aaa;
+  background-color: #b158b1;
+  margin: auto;
+  width: 100%;
+  z-index: 1;
+}
+#contenedor h1 {
+  margin: 0;
+  padding: 25px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 50px;
+  color: #f7dede;
+  float: left;
+}
+#contenedor ul {
+  list-style: none;
+}
+#contenedor .menu {
+  padding: 50px;
+}
+#contenedor .menu li {
+  margin: 5px;
+}
+#contenedor .menu li a {
+  font-family: "Sigmar One", cursive;
+  font-size: 15px;
+  text-decoration: none;
+  float: left;
+  padding: 10px 15px;
+  border: 1px solid white;
+  color: #f7dede;
+}
+#contenedor .menu li a:hover {
+  background-color: #ffffff;
+  margin-top: -2;
+}
+
+.accordion {
+  background-color: #f7efca;
+}
+.accordion .accordion-item .accordion-header {
+  background-color: #f1bebe;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-size: 30px;
+}
+.accordion .accordion-item .accordion-button {
+  background-color: #f1bebe;
+  font-size: 20px;
+}
+.accordion .accordion-body {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
